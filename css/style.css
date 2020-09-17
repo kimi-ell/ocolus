@@ -161,6 +161,7 @@ body.lock {
   max-width: 1922px;
   margin: 0 auto;
   padding: 0 70px;
+  overflow: hidden;
 }
 
 .ibg {
@@ -1584,7 +1585,7 @@ body.lock {
   }
 
   .header_list-link {
-    padding: 140px 0 0 60px;
+    padding: 180px 0 0 40px;
   }
 
   .product_img {
