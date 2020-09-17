@@ -1526,6 +1526,12 @@ body.lock {
   }
 }
 
+@media (max-width: 426px) {
+  .conteiner {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 425px) {
   .recommended_row .slick-arrow {
     height: 40px;
@@ -1587,7 +1593,11 @@ body.lock {
 }
 
 @media (max-width: 340px) {
+  .testimoial_header {
+    height: 625px;
+  }
+
   .testimoial_row .slick-list {
-    margin-top: -100px;
+    margin-top: -120px;
   }
 }
