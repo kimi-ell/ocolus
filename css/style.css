@@ -593,6 +593,9 @@ body.lock {
 
 .intro_btn {
   padding: 0 40px 0 26px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 /*=========================================================================================================*/
