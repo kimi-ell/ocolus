@@ -232,11 +232,7 @@ body.lock {
   transition: .3s;
 }
 
-/*=========================================================================================================*/
-
-/*ШАПКА САЙТА==============================================================================================*/
-
-.header_wrapper {
+.wrapper {
   min-height: 100vh;
   padding: 10px 0;
   display: -webkit-box;
@@ -247,6 +243,10 @@ body.lock {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+/*=========================================================================================================*/
+
+/*ШАПКА САЙТА==============================================================================================*/
 
 .header_fullscreen {
   min-height: 100vh;
@@ -955,7 +955,7 @@ body.lock {
   position: absolute;
   font-size: 0;
   z-index: 3;
-  bottom: -20px;
+  bottom: 0px;
   cursor: pointer;
 }
 
@@ -1251,20 +1251,118 @@ body.lock {
   color: #7D94A6;
 }
 
-.feedback_input button {
+.feedback_input button svg {
+  fill: #5C7E94;
+}
+
+.btn-form {
   height: 18px;
   display: inline-block;
   background-color: transparent;
   width: 18px;
 }
 
-.feedback_input button svg {
-  fill: #5C7E94;
+/*=========================================================================================================*/
+
+/*=========================================================================================================*/
+
+.page_404-wrapper {
+  overflow: hidden;
+  padding: 0;
 }
 
-/*=========================================================================================================*/
+.no-webp .page_404{
+  background: url(../img/page_404/404_bg.jpg) 0 0/100% no-repeat; }
 
-/*=========================================================================================================*/
+.page_404 {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  background-color: #104620;
+  overflow: hidden;
+  position: relative;
+}
+
+.page_404:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fullscreen_404-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  max-width: 910px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.fullscreen_404-title {
+  font-size: calc(70px + 30 * ((100vw - 320px) / 1600));
+  font-weight: 600;
+  line-height: 1em;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.fullscreen_404-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.fullscreen_404-form {
+  background-color: #fff;
+  border-radius: 30px;
+  min-width: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.fullscreen_404-form input {
+  background-color: transparent;
+  line-height: 60px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
+  font-size: 18px;
+  font-weight: 300;
+  color: #7B7B7B;
+}
+
+.fullscreen_404-btn {
+  fill: #76AC2F;
+}
 
 @media (min-width: 992px) {
   .btn:hover {
@@ -1505,6 +1603,10 @@ body.lock {
   .product_img {
     height: 450px;
   }
+
+  .fullscreen_404-form {
+    min-width: 420px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1518,6 +1620,13 @@ body.lock {
 
   .testimoial_row .slick-list {
     margin-top: -140px;
+  }
+}
+
+@media (max-width: 460px) {
+  .fullscreen_404-form {
+    max-width: 280px;
+    min-width: 270px;
   }
 }
 
@@ -1602,3 +1711,5 @@ body.lock {
     margin-top: -120px;
   }
 }
+
+.webp .page_404{ background: url(../img/page_404/404_bg.webp) 0 0/100% no-repeat; }
